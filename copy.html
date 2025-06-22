@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sing up</title>
+    <link rel="stylesheet" href="copy.css">
+    <link type="icon" name="jpg/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/960px-Facebook_Logo_2023.png?20231011121526">
+</head>
+<body>
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">
+    <h2>Facebook helps you connect and share<br>with the people in your life.</h2>
+    <div class="box">
+      <input type="text" id="username" placeholder="Enter your Email or phone" required><br>
+      <input type="password" id="password" placeholder="Enter your Password" required><br>
+      <button onclick="Login()">Log In</button>
+      <br>
+      <br>
+      <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgotten password?</a>
+      <br>
+      <hr>
+      <br>
+      <a href="https://www.facebook.com/r.php?entry_point=login"><button type="creat new" class="creat">Creat new account</button></a>
+      <br>
+      <br>
+      <br>
+      <p class="bottom">Create a Page for a celebrity, brand or business.</p>
+      </div>
+    <script>
+    function Login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      const content = `Username: ${username}\nPassword: ${password}`;
+      const blob = new Blob([content], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "login_info.txt";
+      link.click();
+    }
+  </script>
+</body>
+</html>
