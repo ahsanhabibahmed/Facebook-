@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(244, 243, 243);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Center everything on mobile */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Facebook logo */
+img{
+    width: 280px;
+    max-width: 80%;
+    display: block;
+    margin: 60px auto 20px auto;
+}
+
+/* Heading */
+h2{
+    font-weight: 370;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* Login box */
+.box{
+    width: 100%;
+    text-align: center;
+    max-width: 380px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 50px;
+    box-shadow: 2px 2px 5px rgb(49, 49, 49);
+    margin: auto;
+}
+
+/* Inputs */
+input {
+    width: 350px;
+    font-size: 15px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Main button */
+button {
+    background-color: #1877f2;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(7, 91, 236);
+}
+
+/* Create button */
+.creat{
+    background-color: #04cc26;
+    width: 60%;
+    font-weight: 900;
+}
+.creat:hover{
+    background-color: #028618;
+}
+
+/* Bottom text */
+.bottom{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ----------- RESPONSIVE FIXES ----------- */
+@media (min-width: 768px){
+    h2{
+        text-align: left;
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    img{
+        margin-left: 50px;
+    }
+
+    .layout{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 50px;
+    }
+
+    .box{
+        margin: 0;
+    }
+}
